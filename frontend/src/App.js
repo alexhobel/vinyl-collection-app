@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css';
+import './App.scss';
 
 function App() {
   const [vinyls, setVinyls] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost/api/vinyls')
+    axios.get('http://localhost:3500/api/vinyls')
       .then(response => {
         setVinyls(response.data);
       })

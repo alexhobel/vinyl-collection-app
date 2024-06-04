@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'BobbiTheHippie';
+  src: url('../public/fonts/BobbiTheHippie.otf') format('opentype');
+}
+
+body {
+  margin: 0;
+  font-family: 'BobbiTheHippie', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
