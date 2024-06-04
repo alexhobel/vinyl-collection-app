@@ -17,8 +17,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Vinyl Collection</h1>
-      <ul>
+      <h1 className="vinyl-header">My Vinyl Collection</h1>
+      <ul className="vinyl-list">
         {vinyls.map(vinyl => (
           <li key={vinyl.release_id}>
             <strong>{vinyl.Artist}</strong> - {vinyl.Title} ({vinyl.Released})

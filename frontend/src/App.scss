@@ -1,8 +1,6 @@
-$font-path: "../public/fonts";
-
 @font-face {
   font-family: 'BobbiTheHippie';
-  src: url('#{$font-path}/BobbiTheHippie.otf') format('opentype');
+  src: url('../public/fonts/BobbiTheHippie.otf') format('opentype');
 }
 
 .header {
@@ -10,10 +8,14 @@ $font-path: "../public/fonts";
   color: #fff;
   text-align: center;
   padding: 20px 0;
+}
 
-  h1 {
-    font-family: 'BobbiTheHippie', cursive;
-    font-size: 4vw;
-    margin: 0;
-  }
+.header h1 {
+  font-family: 'BobbiTheHippie', cursive;
+  font-size: 4vw;
+  margin: 0;
+}
+
+.vinyl-list {
+  font-family: 'Arial', sans-serif; /* Hier können Sie eine alternative Standardschriftart festlegen */
 }
