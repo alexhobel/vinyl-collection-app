@@ -40,4 +40,4 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - "5001:5000"
+      - "3000:3000"  # Host:Container Port Mapping für das Frontend

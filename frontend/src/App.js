@@ -6,7 +6,7 @@ function App() {
   const [vinyls, setVinyls] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3500/vinyls')
+    axios.get('http://localhost/api/vinyls')
       .then(response => {
         setVinyls(response.data);
       })

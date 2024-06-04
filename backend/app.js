@@ -20,11 +20,11 @@ fs.readFile(vinylCollectionPath, (err, data) => {
   vinylCollection = JSON.parse(data);
 });
 
-app.get('/vinyls', (req, res) => {
+app.get('/api/vinyls', (req, res) => {
   res.json(vinylCollection);
 });
 
-app.get('/vinyls/:id', (req, res) => {
+app.get('/api/vinyls/:id', (req, res) => {
   const vinyl = vinylCollection.find(v => v.release_id === parseInt(req.params.id));
   if (vinyl) {
     res.json(vinyl);
@@ -37,4 +37,3 @@ const port = process.env.PORT || 3500;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
-
