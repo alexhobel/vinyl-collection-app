@@ -3,6 +3,7 @@ import React from 'react';
 function Header() {
   return (
     <header className="header">
+      <h1 className="title">Vinyl Collection</h1>
       <nav className="menu">
         <ul>
           <li><a href="#">Show Collection</a></li>
@@ -11,7 +12,6 @@ function Header() {
           <li><a href="#">Menu4</a></li>
         </ul>
       </nav>
-      <h1 className="title">Vinyl Collection</h1>
     </header>
   );
 }
